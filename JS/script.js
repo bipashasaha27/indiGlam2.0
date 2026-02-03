@@ -1,0 +1,76 @@
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+var swiper = new Swiper(".testimonialSwiper", {
+  slidesPerView: 3,
+  centeredSlides: true,
+  spaceBetween: 30,
+  loop: true,
+
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".cardSwiper", {
+  slidesPerView: 5,
+  spaceBetween: 10,
+  loop: true,
+
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});
