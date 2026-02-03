@@ -1,0 +1,155 @@
+:root {
+    --hdr-top-bg: #c8a77f;
+    --body-color: #212529;
+    --primary-color: #FFFFFF;
+    --secondary-color: #faead7;
+    --tertiary-color: #000000;
+    --border-image: #E5D1B9;
+    --arrow-bg: linear-gradient(30deg, #e3c1ac, #d7a170);
+    --larken-family: Larken-demo;
+    --agaleoz-family: agaleoz-font;
+    --playfire-font: playfire-display;
+    --playfire-font2: playfire-italic;
+}
+
+
+.hero-sec {
+    background: #000;
+    text-align: center;
+    padding-top: 204px;
+    padding-bottom: 32px;
+}
+
+.hero-sec>.title-3 {
+    font-family: var(--agaleoz-family);
+    margin-bottom: 42px;
+}
+
+.swiper {
+    width: 80%;
+}
+
+.swiper-slide {
+    opacity: .3;
+    transition: all .6s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 520px;
+    max-width: 404px;
+    object-fit: cover;
+    border: 1px solid #444;
+    transform: scale(.9);
+    transition: all .6s ease;
+}
+
+/* active slide */
+.swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper-slide-active img {
+    transform: scale(1.1);
+}
+
+
+.swiper-pagination {
+    margin-top: 30px;
+    position: relative;
+}
+
+.swiper-pagination-bullet {
+    width: 110px;
+    height: 3px;
+    border-radius: 0;
+    background: #666;
+    opacity: 1;
+    margin-top: 32px !important;
+    margin: 0 39px;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--border-image);
+}
+
+.marquee {
+    background: #e7d2b4;
+    padding: 25px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 20s linear infinite;
+    font-size: 36px;
+    font-family: var(--larken-family);
+    color: #3a2a1b;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+    .marquee-content {
+        font-size: 16px;
+    }
+
+    .marquee {
+        padding: 8px 0;
+    }
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 992px) {
+    .marquee-content {
+        font-size: 26px;
+    }
+
+    .marquee {
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .marquee-content {
+        font-size: 16px;
+    }
+
+    .marquee {
+        padding: 8px 0;
+    }
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

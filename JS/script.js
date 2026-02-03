@@ -74,3 +74,32 @@ var swiper = new Swiper(".cardSwiper", {
     },
   },
 });
+
+var swiper = new Swiper(".heroSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});

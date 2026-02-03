@@ -812,7 +812,7 @@ button {
 }
 
 .asthetic-img {
-    max-width: 764px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -828,21 +828,21 @@ button {
 }
 
 .circle-top {
-    max-width: 200px;
-    min-height: 200px;
+    max-width: 100%;
+    min-height: 100%;
     border-radius: 50%;
     position: absolute;
-    top: -7%;
-    right: 0;
+    top: -14%;
+    right: 4%;
 }
 
 .circle-bottom {
-    max-width: 150px;
-    min-height: 150px;
+    max-width: 100%;
+    min-height: 100%;
     border-radius: 50%;
     position: absolute;
-    bottom: -8%;
-    left: 3%;
+    bottom: -91%;
+    left: 10%;
 }
 
 /* testimonial-sec */
@@ -1045,7 +1045,7 @@ button {
     border: none;
     outline: none;
     background: transparent;
-    border-bottom: 1px solid rgba(229, 209, 185, 0.7);
+    /* border-bottom: 1px solid rgba(229, 209, 185, 0.7); */
 }
 
 .email-btn-submit {
@@ -1127,7 +1127,7 @@ button {
     /* banner-sec */
     .left-bnrImg,
     .right-bnrImg {
-        max-width: 185px;
+        max-width: 234px;
     }
 
     .left-bnrCntn {
@@ -1159,15 +1159,17 @@ button {
 
     /* asthetic-sec */
     .asthetic-img-box {
-        margin: 40px auto 0;
+        display: none;
     }
 
     .circle-top {
-        right: -10%;
+        right: -1%;
+        top: -11%;
     }
 
     .circle-bottom {
-        left: -6%;
+        left: -5%;
+        bottom: -88%;
     }
 }
 
@@ -1178,6 +1180,10 @@ button {
     }
 
     /* banner-sec */
+    .hdrTop-cntn>p {
+        font-size: 13px;
+    }
+
     .left-bnrImg {
         max-width: 160px;
         top: 26%;
@@ -1249,6 +1255,10 @@ button {
     }
 
     /* asthetic-sec */
+    .asthetic-img-box {
+        display: none;
+    }
+
     .circle-top {
         max-width: 170px;
         min-height: 170px;
