@@ -78,15 +78,15 @@ a {
     margin: 0 -15px;
 }
 
-.col-5 {
+/* .col-5 {
     width: calc(5 * 8.33%);
     padding: 0 15px;
-}
+} */
 
-.col-6 {
+/* .col-6 {
     width: calc(6 * 8.33%);
     padding: 0 15px;
-}
+} */
 
 .col-3 {
     width: calc(3 * 8.33%);
@@ -1074,7 +1074,6 @@ button {
 .footer-contact-icon {
     display: flex;
 }
-
 
 
 
