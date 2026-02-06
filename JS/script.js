@@ -133,3 +133,18 @@ var swiper = new Swiper(".heroSwiper", {
 //     requestAnimationFrame(updateCount);
 //   });
 // }
+
+// shop-scroll-sec
+
+var swiper = new Swiper(".categorySlider", {
+  slidesPerView: "auto",
+  spaceBetween: 46,
+  loop: true,
+  speed: 2000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  freeMode: true,
+  freeModeMomentum: false,
+});

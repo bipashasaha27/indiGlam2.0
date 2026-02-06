@@ -17,6 +17,13 @@
     font-family: playfire-italic;
     src: url('../Font/PlayfairDisplay-Italic-VariableFont_wght.ttf');
 }
+@font-face {
+    font-family: Bellina;
+    src: url('../Assets/Bellina\ Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 :root {
     --hdr-top-bg: #c8a77f;
@@ -30,6 +37,7 @@
     --agaleoz-family: agaleoz-font;
     --playfire-font: playfire-display;
     --playfire-font2: playfire-italic;
+    --bellina-family: Bellina;
 }
 
 body {
@@ -239,7 +247,7 @@ a {
 
 .banner-sec {
     background: url('../Assets/Herosection.png') no-repeat center / cover;
-    padding: 110px 0 0;
+    padding: 200px 0 0;
     border: 1px solid var(--hdr-top-bg);
     /* background-attachment: fixed;
     background-position: top; */
@@ -254,7 +262,7 @@ a {
 
 .banner-content {
     text-align: center;
-    margin: 117px auto 0;
+    margin: 0 auto;
     max-width: 750px;
 }
 
@@ -439,8 +447,8 @@ a {
 .rightTop-circle {
     max-width: 111px;
     position: absolute;
-    top: 223px;
-    right: -6px;
+    top: 185px;
+    right: -35%;
 }
 
 .right-Bnrcntn {
@@ -1075,7 +1083,15 @@ button {
     display: flex;
 }
 
+@media screen and (max-width:1335px) {
+    .right-bnrImg {
+        display: none;
+    }
 
+    .rightTop-circle {
+        display: none;
+    }
+}
 
 @media screen and (max-width:1200px) {
     .offcanvas {
@@ -1134,22 +1150,23 @@ button {
         padding: 37px 26.5px;
     }
 
+    .left-bnrImg {
+        display: none;
+    }
+
     .leftBtm-img {
-        max-width: 150px;
-        left: 6%;
+        display: none;
     }
 
     .leftBtm-circle {
-        max-width: 75px;
-        top: 88%;
-        left: 15%;
+        display: none;
     }
 
-    .rightTop-circle {
+    /* .rightTop-circle {
         max-width: 90px;
         top: 27%;
         right: 3%;
-    }
+    } */
 
     .right-Bnrcntn {
         max-width: 191px;
@@ -1203,19 +1220,12 @@ button {
         left: 12%;
     }
 
-    .right-bnrImg {
-        display: none;
-    }
-
     .right-Bnrcntn {
         top: 60%;
         right: 0;
         max-width: 187px;
     }
 
-    .rightTop-circle {
-        display: none;
-    }
 
     .right-Bnrcntn {
         top: 60%;

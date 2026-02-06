@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Bellina;
+    src: url('../Assets/Bellina\ Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root {
     --hdr-top-bg: #c8a77f;
     --body-color: #212529;
@@ -10,6 +18,15 @@
     --agaleoz-family: agaleoz-font;
     --playfire-font: playfire-display;
     --playfire-font2: playfire-italic;
+    --bellina-family: Bellina;
+}
+
+.body {
+    background: url('../Assets/body-bg.png') no-repeat center/cover !important;
+}
+
+.luxury-container {
+    max-width: 1595px !important;
 }
 
 .small-container {
@@ -195,6 +212,76 @@
     object-fit: contain;
 }
 
+/* luxury-sec */
+.luxury-sec {
+    padding: 40px 0;
+}
+
+.luxury-img {
+    max-width: 888px;
+    border-radius: 10px;
+}
+
+.luxury-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.luxury-cntnt>span {
+    color: var(--border-image);
+    font-size: 24px;
+    font-family: var(--playfire-font);
+    letter-spacing: 3px;
+}
+
+.luxury-cntnt>.title-2 {
+    font-size: 45px;
+    max-width: 708px;
+    margin: 70px 0;
+}
+
+.luxury-btn {
+    font-size: 35px;
+    font-family: var(--playfire-font);
+    color: #693D09;
+    padding: 25px 35px;
+    background: #F3CD9F;
+    border-radius: 5px;
+}
+
+.luxury-btn:hover {
+    color: #E5D1B9;
+    background: #B26D1B;
+    border: 1px solid #E5D1B9;
+}
+
+.luxury-arrow {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background: #B26D1B;
+    color: #E5D1B9;
+    font-size: 22px;
+    overflow: hidden;
+    padding: 13px;
+    transform: rotate(-30deg);
+    margin-left: 23px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.luxury-arrow:hover {
+    color: #B26D1B;
+    background: #E5D1B9;
+    border: 1px solid #E5D1B9;
+}
+
+.btn-know-more i {
+    font-size: 14px;
+}
+
+
 
 @media screen and (max-width:1200px) {
     .marquee-content {
@@ -224,6 +311,16 @@
     .marquee {
         padding: 8px 0;
     }
+
+    /*luxury-sec  */
+    .luxury-cntnt {
+        margin-top: 30px
+    }
+
+    /* footer-sec */
+    .footer-navigation {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -239,7 +336,8 @@
     .about-cntnt>.title-2 {
         font-size: 40px;
     }
-    .about-cntnt{
+
+    .about-cntnt {
         margin-top: 20px;
     }
 }
