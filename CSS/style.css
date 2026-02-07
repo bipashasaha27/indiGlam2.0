@@ -17,9 +17,10 @@
     font-family: playfire-italic;
     src: url('../Font/PlayfairDisplay-Italic-VariableFont_wght.ttf');
 }
+
 @font-face {
     font-family: Bellina;
-    src: url('../Assets/Bellina\ Bold.ttf');
+    src: url('../Font/Bellina-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -974,6 +975,22 @@ button {
 
 .footer-logo {
     max-width: 148px;
+    margin-bottom: 30px;
+}
+
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-about {
+    flex: 2;
 }
 
 .footer-logo>a>img {
@@ -982,14 +999,14 @@ button {
     object-fit: contain;
 }
 
-.footer-hdr>span {
+.footer-about>span {
     font-size: 32px;
     font-family: var(--larken-family);
     color: var(--border-image);
     margin-top: 10px;
 }
 
-.footer-hdr>p {
+.footer-about>p {
     font-size: 30px;
     font-family: var(--larken-family);
     color: var(--border-image);
@@ -1070,14 +1087,12 @@ button {
 
 .ftr-bottom {
     margin-top: 60px;
-}
-
-.ftr-copyright {
     font-size: 22px;
     font-family: var(--larken-family);
     color: var(--border-image);
     font-weight: 100;
 }
+
 
 .footer-contact-icon {
     display: flex;
@@ -1278,6 +1293,21 @@ button {
         bottom: -9%;
         left: 0;
     }
+
+    /* footer-sec */
+    .footer-col {
+        flex: 1 1 45%;
+    }
+
+    /* footer-sec */
+
+    .footer-about>p {
+        font-size: 25px;
+    }
+
+    .footer-navigation {
+        margin-top: 30px;
+    }
 }
 
 
@@ -1370,6 +1400,11 @@ button {
     .circle-bottom,
     .circle-top {
         display: none;
+    }
+
+    /* footer-sec */
+    .footer-col {
+        flex: 1 1 100%;
     }
 }
 

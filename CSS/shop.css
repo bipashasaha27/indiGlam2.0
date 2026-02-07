@@ -1,6 +1,26 @@
 @font-face {
+    font-family: Larken-demo;
+    src: url('../Font/fonnts.com-Larken_Regular.otf');
+}
+
+@font-face {
+    font-family: agaleoz-font;
+    src: url('../Font/agaleoz.otf');
+}
+
+@font-face {
+    font-family: playfire-display;
+    src: url('../Font/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: playfire-italic;
+    src: url('../Font/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
     font-family: Bellina;
-    src: url('../Assets/Bellina\ Bold.ttf');
+    src: url('../Font/Bellina-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -34,7 +54,7 @@ textarea {
 
 /* shop-sec */
 .shop-sec {
-    padding: 272px 0;
+    padding-top: 272px;
 }
 
 .shop-cntnt {
@@ -225,7 +245,7 @@ textarea {
 
 .shop-card {
     max-width: 387px;
-    margin-top: 37px;
+    margin: 37px auto;
 }
 
 .shopcard-img {
@@ -266,6 +286,43 @@ textarea {
     font-size: 17px;
 }
 
+.pagination-box {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.page-btn {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #cbb79c;
+    color: #cbb79c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* active button */
+.page-btn.active {
+    background: #d8c1a5;
+    color: black;
+}
+
+/* hover effect */
+.page-btn:hover {
+    background: #d8c1a5;
+    color: black;
+}
+
+.page-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+
 
 
 
@@ -281,4 +338,12 @@ textarea {
     }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .right-cntnt {
+        flex-direction: column;
+    }
+
+    .right-cntnt>p {
+        font-size: 16px;
+    }
+}

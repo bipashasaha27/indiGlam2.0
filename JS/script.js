@@ -104,35 +104,26 @@ var swiper = new Swiper(".heroSwiper", {
   },
 });
 
-// Coutner Code
-// Counting Numbers
-// const counters = document.querySelectorAll(".count");
-// const totalDuration = 2000; // total time for animation (2s)
-// const easeOutQuad = (t) => t * (2 - t);
 
-// function startCounters() {
-//   counters.forEach((counter) => {
-//     counter.innerText = "0 +"; // reset before starting
-//     const target = Number(counter.getAttribute("data-target")) || 0;
-//     let startTime = null;
+// counter-sec
 
-//     const updateCount = (timestamp) => {
-//       if (!startTime) startTime = timestamp;
-//       const progress = Math.min((timestamp - startTime) / totalDuration, 1);
-//       const easedProgress = easeOutQuad(progress);
-//       const current = Math.floor(target * easedProgress);
+document.querySelectorAll(".count").forEach((counter) => {
+  const update = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
 
-//       if (progress < 1) {
-//         counter.innerText = current.toLocaleString() + " +";
-//         requestAnimationFrame(updateCount);
-//       } else {
-//         counter.innerText = formatNumber(target) + " +";
-//       }
-//     };
+    const increment = target / 100;
 
-//     requestAnimationFrame(updateCount);
-//   });
-// }
+    if (count < target) {
+      counter.innerText = Math.ceil(count + increment);
+      setTimeout(update, 20);
+    } else {
+      counter.innerText = target + " +";
+    }
+  };
+
+  update();
+});
 
 // shop-scroll-sec
 

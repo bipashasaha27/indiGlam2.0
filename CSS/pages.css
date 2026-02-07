@@ -1,6 +1,26 @@
 @font-face {
+    font-family: Larken-demo;
+    src: url('../Font/fonnts.com-Larken_Regular.otf');
+}
+
+@font-face {
+    font-family: agaleoz-font;
+    src: url('../Font/agaleoz.otf');
+}
+
+@font-face {
+    font-family: playfire-display;
+    src: url('../Font/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: playfire-italic;
+    src: url('../Font/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
     font-family: Bellina;
-    src: url('../Assets/Bellina\ Bold.ttf');
+    src: url('../Font/Bellina-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -165,8 +185,9 @@
     color: var(--tertiary-color);
     max-width: 211px;
     text-align: center;
-    font-family: var(--playfire-font);
+    font-family: var(--bellina-family);
     margin-top: 35px;
+    border-radius: 5px;
 }
 
 .counter-card>span {
@@ -317,9 +338,8 @@
         margin-top: 30px
     }
 
-    /* footer-sec */
-    .footer-navigation {
-        margin-top: 30px;
+    .luxury-cntnt>.title-2 {
+        font-size: 35px;
     }
 }
 
