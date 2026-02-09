@@ -53,6 +53,10 @@ ul {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     display: inline-block;
@@ -355,7 +359,7 @@ a {
     overflow: hidden;
     padding: 30px 31px;
     transform: rotate(-30deg);
-    margin-left: 16px;
+    /* margin-left: 16px; */
     /* transition-duration: 2s; */
     border: 1px solid var(--hdr-top-bg);
 }
@@ -432,7 +436,7 @@ a {
     max-width: 239px;
     position: absolute;
     top: 72px;
-    right: 66px;
+    right: 99px;
 }
 
 .right-bnrImg::after {
@@ -470,6 +474,7 @@ a {
     max-width: 586px;
     display: flex;
     flex-direction: column;
+    padding: 69px 28px 23px 28px;
     justify-content: space-between;
     margin-top: 74px;
 }
@@ -478,32 +483,30 @@ a {
     background: url('../Assets/card-img1.png') no-repeat center/cover;
 }
 
-.bnr-card>.title-2 {
-    margin-top: 69px;
-    margin-left: 28px;
+/* .bnr-card>.title-2 {
+    padding: 69px 28px 23px 28px;
     max-width: 362px;
-}
+} */
 
 .bnr-card>p {
     max-width: 530px;
     font-size: 20px;
     font-family: var(--playfire-font);
     color: var(--secondary-color);
-    margin-left: 28px;
 }
 
-.btm-bnr-cntnt>.secondary-btn {
+/* .btm-bnr-cntnt>.secondary-btn {
     margin-left: 28px;
-}
+} */
 
 .secondary-btn:hover {
     background: var(--hdr-top-bg);
     color: var(--tertiary-color);
 }
 
-.btm-bnr-cntnt {
+/* .btm-bnr-cntnt {
     margin-bottom: 23px;
-}
+} */
 
 .card-img2 {
     background: url('../Assets/card-img2.png') no-repeat center/cover;
@@ -529,7 +532,8 @@ a {
 .bottmBnr-card {
     align-items: end;
     flex-direction: row;
-    /* padding: 0px 20px 30px; */
+    padding: 69px 28px 23px 28px;
+    max-width: 586px;
 }
 
 .lastCard-cntn {
@@ -539,6 +543,7 @@ a {
     justify-content: space-around;
     position: absolute;
     bottom: 30px;
+    right: 2px;
 }
 
 .lastCard-cntn>p {
@@ -568,6 +573,10 @@ a {
     align-items: center;
     justify-content: end;
 
+}
+
+.collection-btn>.tirtiary-btn {
+    margin-right: 16px;
 }
 
 /* /* .swiper {
@@ -1080,7 +1089,9 @@ button {
 
 .email-input-form {
     max-width: 382px;
-    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .ftr-emailInput {
@@ -1126,6 +1137,13 @@ button {
 
     .rightTop-circle {
         display: none;
+    }
+}
+
+@media screen and (max-width:1316px) {
+    .secondary-btn {
+        padding: 26px 48px;
+        font-size: 22px;
     }
 }
 
@@ -1176,6 +1194,11 @@ button {
     }
 
     /* banner-sec */
+    .secondary-btn {
+        padding: 26px 48px;
+        font-size: 22px;
+    }
+
     .left-bnrImg,
     .right-bnrImg {
         max-width: 234px;
@@ -1214,6 +1237,35 @@ button {
         display: none;
     }
 
+    .right-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .right-text>.title-4 {
+        margin: 10px auto;
+    }
+
+    .top-cntnt>.title-2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .top-cntnt>p {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .btm-left-cntnt>.title-4 {
+        text-align: center;
+    }
+
+    .tirtiary-btn {
+        margin: 0 auto 27px;
+    }
+
+    /* banner-sec */
+
     .circle-top {
         right: -1%;
         top: -11%;
@@ -1227,6 +1279,14 @@ button {
 
 
 @media screen and (max-width:992px) {
+
+    .bnr-card {
+        margin: 35px auto;
+    }
+    .nav-item{
+        margin: 0;
+    }
+
     .nav-right {
         margin: 0 auto;
     }
@@ -1290,20 +1350,60 @@ button {
         width: 60px;
         height: 60px;
         font-size: 18px;
-        padding: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* jwellery-sec */
 
     .collection-btn>.tirtiary-btn {
         font-size: 22px;
+        margin-right: 16px;
+        text-wrap: nowrap;
     }
 
     /* asthetic-sec */
+
+    .middile-cntnt-img,
+    .middile-cntnt-img2 {
+        margin-top: 29px;
+        margin: 20px auto;
+    }
+
     .asthetic-img-box {
         display: none;
     }
 
+    .right-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .right-text>.title-4 {
+        margin: 0 auto;
+    }
+
+    .top-cntnt>.title-2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .top-cntnt>p {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .btm-left-cntnt>.title-4 {
+        text-align: center;
+    }
+
+    .tirtiary-btn {
+        margin: 0 auto 10px;
+    }
+
+
+    /* banner-sec */
     .circle-top {
         max-width: 170px;
         min-height: 170px;
@@ -1316,11 +1416,19 @@ button {
     }
 
     /* footer-sec */
+    .email-input-form {
+        max-width: 200px;
+        display: flex;
+    }
+
+
+    .email-btn-submit {
+        margin-top: 20px;
+    }
+
     .footer-col {
         flex: 1 1 45%;
     }
-
-    /* footer-sec */
 
     .footer-about>p {
         font-size: 25px;
@@ -1342,13 +1450,7 @@ button {
     }
 
     /* footer-sec */
-    /* footer-sec */
-    .email-input-form {
-        max-width: 200px;
-        flex-wrap: wrap;
-    }
 
-    .email-btn-submit {}
 }
 
 @media (max-width: 768px) {
@@ -1385,6 +1487,10 @@ button {
         gap: 20px;
     }
 
+    .jewllery-content>.title-3 {
+        font-size: 35px;
+    }
+
     .collection-btn {
         align-self: flex-end;
     }
@@ -1407,6 +1513,7 @@ button {
     .middile-cntnt-img,
     .middile-cntnt-img2 {
         margin-top: 29px;
+        margin: 20px auto;
     }
 
     .circle-top {
@@ -1426,6 +1533,69 @@ button {
 
 
 @media screen and (max-width: 576px) {
+
+    /* hdr-sec */
+    .nav-contact>span {
+        font-size: 11px;
+    }
+
+    .nav-contact>span>img {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* banner-sec */
+    .bnr-btn>.primary-btn {
+        margin-right: 16px;
+    }
+
+    .bnr-card {
+        margin: 35px auto;
+        min-height: 400px;
+        padding: 30px 12px;
+    }
+
+    .bottmBnr-card {
+        min-height: 400px;
+    }
+
+    .bnr-card>.title-2 {
+        font-size: 21px;
+    }
+
+    .bnr-card>p {
+        font-size: 18px;
+    }
+
+
+
+    .btm-bnr-cntnt>.btm-bnr-cntnt>.arrow-btn,
+    .btm-bnr-cntnt>.arrow-btn2 {
+        width: 49px;
+        height: 49px;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .collection-btn>.arrow-btn {
+        width: 49px;
+        height: 49px;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .lastCard-cntn>.arrow-btn,
+    .lastCard-cntn>.arrow-btn2 {
+        width: 48px;
+        height: 48px;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .lastCard-cntn>p {
+        font-size: 18px;
+    }
+
     .circle-top {
         max-width: 110px;
         min-height: 110px;
@@ -1440,6 +1610,7 @@ button {
     /* footer-sec */
     .email-input-form {
         max-width: 200px;
+        display: flex;
         flex-wrap: wrap;
     }
 
