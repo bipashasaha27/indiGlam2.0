@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Larken-demo;
+    src: url('../Font/fonnts.com-Larken_Regular.otf');
+}
+
+@font-face {
+    font-family: agaleoz-font;
+    src: url('../Font/agaleoz.otf');
+}
+
+@font-face {
+    font-family: playfire-display;
+    src: url('../Font/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: playfire-italic;
+    src: url('../Font/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Bellina;
+    src: url('../Font/Bellina-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --hdr-top-bg: #c8a77f;
+    --body-color: #212529;
+    --primary-color: #FFFFFF;
+    --secondary-color: #faead7;
+    --tertiary-color: #000000;
+    --border-image: #E5D1B9;
+    --arrow-bg: linear-gradient(30deg, #e3c1ac, #d7a170);
+    --larken-family: Larken-demo;
+    --agaleoz-family: agaleoz-font;
+    --playfire-font: playfire-display;
+    --playfire-font2: playfire-italic;
+    --bellina-family: Bellina;
+}
+
+body {
+    background: url('../Assets/shopBG.png') no-repeat center / cover !important;
+}
+
+.order-status-sec {
+    color: #d8c3a5;
+    padding-top: 122px;
+}
+
+/* Timeline container */
+.status-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    position: relative;
+}
+
+/* middle line */
+.status-line::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #555;
+}
+
+.status-step {
+    text-align: center;
+    position: relative;
+    width: 20%;
+}
+
+/* circle */
+.status-step::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #444;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.track{
+    margin-bottom: 20px;
+}
+
+/* active step */
+.status-step.active::before {
+    background: gold;
+}
+
+.status-step i {
+    margin-bottom: 8px;
+}
+
+.status-step span {
+    font-size: 12px;
+    display: block;
+    margin-top: 8px;
+}
+
+/* product list */
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.product-item img {
+    width: 70px;
+    margin-right: 15px;
+}

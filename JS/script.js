@@ -104,7 +104,6 @@ var swiper = new Swiper(".heroSwiper", {
   },
 });
 
-
 // counter-sec
 
 document.querySelectorAll(".count").forEach((counter) => {
@@ -139,3 +138,23 @@ var swiper = new Swiper(".categorySlider", {
   freeMode: true,
   freeModeMomentum: false,
 });
+
+// product-page-counting
+
+// const minusBtn = document.querySelector(".minus");
+// const plusBtn = document.querySelector(".plus");
+// const qtyEl = document.querySelector(".qty");
+
+// let qty = 1;
+
+// plusBtn.addEventListener("click", () => {
+//   qty++;
+//   qtyEl.textContent = qty;
+// });
+
+// minusBtn.addEventListener("click", () => {
+//   if (qty > 1) {
+//     qty--;
+//     qtyEl.textContent = qty;
+//   }
+// });

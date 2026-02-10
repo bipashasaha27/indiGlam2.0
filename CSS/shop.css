@@ -250,6 +250,7 @@ textarea {
 
 .shopcard-img {
     max-width: 387px;
+    cursor: pointer;
 }
 
 .shopcard-img>img {

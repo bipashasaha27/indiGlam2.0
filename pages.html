@@ -45,19 +45,23 @@
 
                     <!-- Center Menu -->
                     <div class="offcanvas offcanvas-end justify-content-center" tabindex="-1" id="offcanvasExample">
-                        <div class="offcanvas-header me-auto">
+
+                        <div class="offcanvas-header ms-auto">
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
                                 <i class="fa-solid fa-xmark"></i>
                             </button>
                         </div>
 
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="./pages.html">Page</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
-                        </ul>
+                        <div class="offcanvas-body menu-body">
+                            <ul class="navbar-nav flex-column flex-lg-row align-items-center mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="./pages.html">Page</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+
                     </div>
 
                     <!-- Right -->
@@ -71,14 +75,19 @@
                                         class="fa-solid fa-cart-shopping"></i></a></li>
                         </ul>
                     </div>
+                    <!-- Mobile Toggler -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
                 </div>
 
-                <!-- Mobile Toggler -->
+                <!-- Mobile Toggler
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
 
             </div>
         </nav>

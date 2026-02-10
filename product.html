@@ -49,19 +49,23 @@
 
                     <!-- Center Menu -->
                     <div class="offcanvas offcanvas-end justify-content-center" tabindex="-1" id="offcanvasExample">
-                        <div class="offcanvas-header me-auto">
+
+                        <div class="offcanvas-header ms-auto">
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
                                 <i class="fa-solid fa-xmark"></i>
                             </button>
                         </div>
 
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./pages.html">Page</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="./shop.html">Shop</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
-                        </ul>
+                        <div class="offcanvas-body menu-body">
+                            <ul class="navbar-nav flex-column flex-lg-row align-items-center mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./pages.html">Page</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="./shop.html">Shop</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+
                     </div>
 
                     <!-- Right -->
@@ -75,14 +79,19 @@
                                         class="fa-solid fa-cart-shopping"></i></a></li>
                         </ul>
                     </div>
+                    <!-- Mobile Toggler -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
                 </div>
 
-                <!-- Mobile Toggler -->
+                <!-- Mobile Toggler
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
 
             </div>
         </nav>
@@ -90,14 +99,17 @@
 
     <!-- product-sec -->
     <section class="product-sec">
+        <p> “Diamond Ring” has been added to your cart.</p>
         <div class="product-box">
             <div class="container">
-                <div class="row">
+                <div class="row product-both align-items-center">
+
                     <div class="col-12 col-xl-6">
                         <div class="product-img-box">
                             <div class="product-img">
                                 <img src="./Assets/product-img.png" alt="">
                             </div>
+
                             <div class="product-img-lists">
                                 <ul class="product-lists d-flex align-items-center">
                                     <li class="list-img">
@@ -116,10 +128,373 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-xl-6 col-12 mt-5 mt-xl-0">
+                        <div class="product-content">
+                            <div class="first-cntnt">
+                                <h2 class="title-2">Diamond Ring</h2>
+
+                                <p>Product Code : ERNOB41588</p>
+
+                                <div class="product-discount">
+                                    <p>Save: Rs 7,531 </p>
+                                </div>
+
+                                <p>20% savings on making charges</p>
+
+                                <span>
+                                    Weight will increase as per the Size.
+                                    Check Sizing Comparison
+                                </span>
+
+                                <h3 class="title-3">Price Breakup</h3>
+
+                                <div class="price-box d-flex align-items-center">
+                                    <div class="price">
+                                        <p>Diamond</p>
+                                        <span>₹ 20,234</span>
+                                    </div>
+
+                                    <div class="price">
+                                        <p>Making</p>
+                                        <span>
+                                            ₹ 2308</span>
+                                    </div>
+
+                                    <div class="price">
+                                        <p>Tax</p>
+                                        <span>₹1243</span>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <p>Rs 50,000</p>
+                                    <span>Availability: In stock</span>
+                                </div>
+
+                                <div class="cart-action">
+                                    <div class="qty-box">
+                                        <button class="minus">-</button>
+                                        <span class="qty">1</span>
+                                        <button class="plus">+</button>
+                                    </div>
+
+                                    <a class="continue-btn" href="./checkout-page.html">
+                                        Continue
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- product- details-section -->
+    <section class="product-details-sec">
+        <div class="container">
+            <h1 class="details-title">
+                Product Details
+            </h1>
+            <div class="row">
+                <div class="col-xl-4 col-12">
+                    <div class="details-cntnt">
+                        <h2 class="details-title-2">
+                            Basic information
+                        </h2>
+                        <ul class="details-list">
+                            <li class="details-item">
+                                <span>Product type</span>
+                                <span>Earring</span>
+                            </li>
+                            <li class="details-item">
+                                <span>Brands</span>
+                                <span>Malabar</span>
+                            </li>
+                            <li class="details-item">
+                                <span>Gender</span>
+                                <span>Women</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="details-cntnt">
+                        <h2 class="details-title-2">
+                            Metal Information
+                        </h2>
+                        <ul class="details-list">
+                            <li class="details-item">
+                                <span>Metal Purity</span>
+                                <span>22 KT (916)</span>
+                            </li>
+                            <li class="details-item">
+                                <span>Metal Colour</span>
+                                <span>White</span>
+                            </li>
+                            <li class="details-item">
+                                <span>Gross Weight ( g. )</span>
+                                <span>2.646</span>
+                            </li>
+                            <li class="details-item">
+                                <span>Net Weight ( g. )</span>
+                                <span>2.646</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="details-cntnt">
+                        <h2 class="details-title-2">
+                            Certification Details
+                        </h2>
+                        <ul class="details-list">
+                            <li class="details-item">
+                                <span>Diamond Certification</span>
+                                <p>BIS Hallmark 916</p>
+                            </li>
+                            <li class="details-item">
+                                <span>Hallmark License No</span>
+                                <p>HM/C-7790174629</p>
+                            </li>
+                            <li class="details-item">
+                                <span>Stone Information</span>
+                            </li>
+                            <li class="details-item">
+                                <span>Stone Weight ( g. )</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- description-sec -->
+    <section class="description-sec">
+        <div class="container">
+            <div class="description-title">
+                <a class="description" href="">Description</a>
+                <a class="information" href="">Additional Information</a>
+            </div>
+            <div class="description-cntnt">
+                <p>Jewellery has been an integral part of human culture for thousands of years, serving as a symbol of
+                    beauty, status, tradition, and personal expression. Crafted from precious metals, gemstones, beads,
+                    and natural materials, jewellery pieces range from simple ornaments to intricate works of art.
+
+                    Historically, jewellery has held significant cultural and religious meanings in various societies,
+                    often passed down through generations as heirlooms. Today, it continues to evolve in design and
+                    purpose — from luxury fashion accessories to meaningful tokens of love, identity, and celebration.
+                    Whether worn daily or reserved for special occasions, jewellery remains a timeless expression of
+                    style and individuality.</p>
+            </div>
+        </div>
+    </section>
+    <!-- related-product -->
+
+    <section class="jwellery-sec">
+        <div class="container jwellery-container">
+            <div class="jewllery-content">
+                <h3 class="title-3">
+                    Related product
+                </h3>
+            </div>
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper2-cntn">
+                                <div class="swiper2-img shine-img">
+                                    <img src="./Assets/relatedProduct-1.png" alt="" />
+                                </div>
+                                <div class="related-product-title">
+                                    <p>Ring</p>
+                                    <span>Rs 7,531 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper2-cntn">
+                                <div class="swiper2-img shine-img">
+                                    <img src="./Assets/relatedProduct-2.png" alt="" />
+                                </div>
+                                <div class="related-product-title">
+                                    <p>Bracelet</p>
+                                    <span>Rs 7,531 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper2-cntn">
+                                <div class="swiper2-img shine-img">
+                                    <img src="./Assets/relatedProduct-3.png" alt="" />
+                                </div>
+                                <div class="related-product-title">
+                                    <p>Necklace</p>
+                                    <span>Rs 7,531 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper2-cntn">
+                                <div class="swiper2-img shine-img">
+                                    <img src="./Assets/relatedProduct-4.png" alt="" />
+                                </div>
+                                <div class="related-product-title">
+                                    <p>Ring</p>
+                                    <span>Rs 7,531 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper2-cntn">
+                                <div class="swiper2-img shine-img">
+                                    <img src="./Assets/relatedProduct-1.png" alt="" />
+                                </div>
+                                <div class="related-product-title">
+                                    <p>Ring</p>
+                                    <span>Rs 7,531 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper2-cntn">
+                                <div class="swiper2-img shine-img">
+                                    <img src="./Assets/relatedProduct-2.png" alt="" />
+                                </div>
+                                <div class="related-product-title">
+                                    <p>Bracelet</p>
+                                    <span>Rs 7,531 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper2-cntn">
+                                <div class="swiper2-img shine-img">
+                                    <img src="./Assets/relatedProduct-3.png" alt="" />
+                                </div>
+                                <div class="related-product-title">
+                                    <p>Necklace</p>
+                                    <span>Rs 7,531 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper2-cntn">
+                                <div class="swiper2-img shine-img">
+                                    <img src="./Assets/relatedProduct-4.png" alt="" />
+                                </div>
+                                <div class="related-product-title">
+                                    <p>Ring</p>
+                                    <span>Rs 7,531 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-sec -->
+    <footer class="footer-sec">
+        <div class="container footer-container">
+
+            <div class="footer-flex">
+
+                <!-- About -->
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <a href="./index4.html">
+                            <img src="./Assets/IndiGlam.png" alt="">
+                        </a>
+                    </div>
+
+                    <span>About Us</span>
+
+                    <p>
+                        Jewellery is more than just an accessory — it’s a reflection of personality,
+                        heritage, and timeless beauty.
+                    </p>
+
+                    <ul class="social-links d-flex align-items-center">
+                        <!-- social icons -->
+
+                        <li class="social-item">
+                            <a href="" class="footer-social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                                <div class="fill-color"></div>
+                            </a>
+                            <div class="tooltip">Instagram</div>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="footer-social-link">
+                                <i class="fa-brands fa-twitter"></i>
+                                <div class="fill-color"></div>
+                            </a>
+                            <div class="tooltip">Twitter</div>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="footer-social-link">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <div class="fill-color"></div>
+                            </a>
+                            <div class="tooltip">Facebook</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <!-- Main -->
+                    <div class="col-md-2 col-sm-4 col-6 mt-4 mt-sm-0">
+                        <div class="footer-links-hding">Main</div>
+                        <ul class="footer-links">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category -->
+                    <div class="col-md-2 col-sm-4 col-6 mt-4 mt-sm-0">
+                        <div class="footer-links-hding">Category</div>
+                        <ul class="footer-links">
+                            <li><a href="">Earrings</a></li>
+                            <li><a href="">Rings</a></li>
+                            <li><a href="">Necklace</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-md-3 col-sm-4 col-12 mt-4 mt-sm-0">
+                        <div class="footer-links-hding">More Info</div>
+                        <ul class="footer-links">
+                            <li><a href="">+61383766284</a></li>
+                            <li><a href="">info@aivio.com</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-md-5 col-sm-12 col-12 mt-4 mt-md-0">
+                        <div class="footer-links-hding">Newsletter Signup</div>
+                        <form class="email-input-form">
+                            <input class="ftr-emailInput" type="email" placeholder="Enter Your Email">
+                            <button class="email-btn-submit">SEND</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="ftr-bottom">
+                Copyright © 2026 Hiraola. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
 
     <!-- Bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

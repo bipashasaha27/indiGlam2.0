@@ -1,0 +1,175 @@
+@font-face {
+    font-family: Larken-demo;
+    src: url('../Font/fonnts.com-Larken_Regular.otf');
+}
+
+@font-face {
+    font-family: agaleoz-font;
+    src: url('../Font/agaleoz.otf');
+}
+
+@font-face {
+    font-family: playfire-display;
+    src: url('../Font/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: playfire-italic;
+    src: url('../Font/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Bellina;
+    src: url('../Font/Bellina-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --hdr-top-bg: #c8a77f;
+    --body-color: #212529;
+    --primary-color: #FFFFFF;
+    --secondary-color: #faead7;
+    --tertiary-color: #000000;
+    --border-image: #E5D1B9;
+    --arrow-bg: linear-gradient(30deg, #e3c1ac, #d7a170);
+    --larken-family: Larken-demo;
+    --agaleoz-family: agaleoz-font;
+    --playfire-font: playfire-display;
+    --playfire-font2: playfire-italic;
+    --bellina-family: Bellina;
+}
+
+body {
+    background: url('../Assets/shopBG.png') no-repeat center / cover !important;
+}
+
+/* payment-sec */
+.payment-sec {
+    background: #000;
+    color: #d8c3a5;
+    padding-top: 122px;
+    padding-bottom: 78px;
+}
+
+.payment-hdr {
+    background: rgb(73 66 52 / 60%);
+    backdrop-filter: blur(5px);
+    padding: 50px 0;
+    color: var(--border-image);
+}
+
+.payment-hdr>p {
+    font-size: 50px;
+    font-family: var(--bellina-family);
+    text-align: center;
+}
+
+.payment-box {
+    margin-top: 120px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: var(--bellina-family);
+}
+
+.payment-option {
+    padding: 30px 0;
+    background: none;
+    border-bottom: 1px solid var(--hdr-top-bg);
+}
+
+.payment-option label {
+    font-family: var(--bellina-family);
+    font-size: 30px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.payment-option input {
+    margin-right: 10px;
+}
+
+.order-summary {
+    padding-left: 40px;
+}
+
+.order-summary>.title-4 {
+    font-size: 38px;
+    font-family: var(--bellina-family);
+    margin-bottom: 50px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.summary-row>span {
+    font-size: 35px;
+    font-family: var(--bellina-family);
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.confirm-btn {
+    width: 100%;
+    background: #cdb79e;
+    color: #422706;
+    border: none;
+    padding: 20.5px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 35px;
+    font-family: var(--bellina-family);
+    text-align: center;
+}
+
+@media screen and (max-width:992px) {
+    .order-summary {
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .order-summary>span {
+        font-size: 27px;
+    }
+
+    .confirm-btn {
+        padding: 20px 0;
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .payment-hdr>p {
+        font-size: 33px;
+    }
+
+    .section-title {
+        font-size: 21px;
+    }
+
+    .payment-option label {
+        font-size: 17px;
+    }
+
+    .summary-row>span {
+        font-size: 21px;
+    }
+
+    .order-summary>.title-4 {
+        font-size: 24px;
+    }
+
+    .confirm-btn {
+        padding: 16px 0;
+        font-size: 21px;
+    }
+}
