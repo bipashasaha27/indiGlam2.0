@@ -113,20 +113,20 @@ a {
 
 .title-2 {
     color: var(--secondary-color);
-    font-size: 40px;
+    font-size: 55px;
     font-family: var(--playfire-font);
 }
 
 .title-3 {
     color: var(--secondary-color);
-    font-size: 55px;
+    font-size: 40px;
     font-family: var(--playfire-font);
 }
 
 .title-4 {
     color: var(--border-image);
     font-family: var(--playfire-font);
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .secondary-btn {

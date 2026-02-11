@@ -60,7 +60,7 @@
     padding-bottom: 32px;
 }
 
-.hero-sec>.title-3 {
+.hero-sec>.title-2 {
     font-family: var(--agaleoz-family);
     margin-bottom: 42px;
 }
@@ -256,7 +256,7 @@
     letter-spacing: 3px;
 }
 
-.luxury-cntnt>.title-2 {
+.luxury-cntnt>.title-3 {
     font-size: 45px;
     max-width: 708px;
     margin: 70px 0;
@@ -285,11 +285,11 @@
     color: #E5D1B9;
     font-size: 22px;
     overflow: hidden;
-    padding: 13px;
     transform: rotate(-30deg);
     margin-left: 23px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 
 .luxury-arrow:hover {
@@ -338,7 +338,7 @@
         margin-top: 30px
     }
 
-    .luxury-cntnt>.title-2 {
+    .luxury-cntnt>.title-3 {
         font-size: 35px;
     }
 }
@@ -359,6 +359,26 @@
 
     .about-cntnt {
         margin-top: 20px;
+    }
+
+    .counter-card>span {
+        font-size: 32px;
+    }
+
+    .counter-card>p {
+        font-size: 16px;
+    }
+
+    .luxury-btn {
+        font-size: 22px;
+        padding: 18px 23px;
+    }
+
+    .luxury-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+        margin-left: 8px;
     }
 }
 
