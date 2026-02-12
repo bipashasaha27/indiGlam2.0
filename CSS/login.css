@@ -111,7 +111,56 @@
     font-size: 25px;
     font-family: var(--bellina-family);
     padding: 30px 0;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
 }
+
+.login-link {
+    display: inline-block;
+    width: 100%;
+}
+
+/* .login-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    color: #333;
+    border: 1px solid #b89b7a;
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+} */
+
+/* fill layer */
+.login-button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #b89b7a;
+    transition: width 0.6s ease;
+    z-index: -1;
+}
+
+/* hover effect */
+.login-button:hover::before {
+    width: 100%;
+}
+
+.login-button:hover {
+    color: white;
+}
+
+
 
 .login-divider {
     margin: 50px 0;
@@ -148,6 +197,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
+    transform: skewX(-25deg);
+}
+
+/* Hover animation */
+.social-login:hover::before {
+    animation: shine 0.9s ease forwards;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
 }
 
 .social-login>img {
@@ -179,6 +256,9 @@
     font-size: 25px;
     font-family: var(--bellina-family);
     color: var(--border-image);
+}
+.sign-up-btn:hover{
+    border-bottom: 1px solid var(--hdr-top-bg);
 }
 
 @media screen and (max-width:1200px) {
